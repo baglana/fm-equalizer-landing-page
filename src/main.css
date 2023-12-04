@@ -23,7 +23,7 @@ main {
     width: 17.5rem;
     height: 23.75rem;
     margin: auto;
-    background: url('public/figures.svg');
+    background: url('/figures.svg');
     background-position: top;
     background-repeat: no-repeat;
   }
@@ -39,7 +39,7 @@ main {
       left: 4rem;
       width: 16.88788rem;
       height: 34.75rem;
-      background: url('public/phone.svg'), 0px 0px / 100% 100% no-repeat;
+      background: url('/phone.svg'), 0px 0px / 100% 100% no-repeat;
     }
 
     & .figures {
