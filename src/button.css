@@ -1,0 +1,41 @@
+.c-card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.49rem;
+  cursor: pointer;
+  border: none;
+  min-width: 18.5rem;
+  height: 3.8125rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+
+  & span {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 177.778% */
+    letter-spacing: -0.01125rem;
+  }
+}
+
+.btn-ios {
+  margin-bottom: 1rem;
+  background: var(--color-text-primary);
+  color: var(--color-bg);
+
+  &:hover {
+    background: var(--color-ios-hover);
+  }
+}
+
+.btn-android {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+
+  &:hover {
+    background: var(--color-android-hover);
+  }
+}

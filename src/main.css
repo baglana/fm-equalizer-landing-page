@@ -1,0 +1,64 @@
+:root {
+  --color-bg: hsla(20, 33%, 98%, 1);
+  --color-text-primary: hsla(244, 23%, 12%, 1);
+  --color-accent: hsla(12, 94%, 65%, 1);
+  --color-ios-hover: hsla(177, 68%, 64%, 1);
+  --color-android-hover: hsla(33, 100%, 70%, 1);
+
+  --font-primary: 'IBM Plex Sans', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 10.38rem;
+  position: relative;
+  background: var(--color-text-primary);
+  border-radius: 0.75rem;
+
+  & .figures {
+    width: 17.5rem;
+    height: 23.75rem;
+    margin: auto;
+    background: url('public/figures.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 48rem) {
+    width: 43.5rem;
+    height: 37.5rem;
+
+    & .phone {
+      display: block;
+      position: absolute;
+      top: -8.62rem;
+      left: 4rem;
+      width: 16.88788rem;
+      height: 34.75rem;
+      background: url('public/phone.svg'), 0px 0px / 100% 100% no-repeat;
+    }
+
+    & .figures {
+      position: absolute;
+      top: -1.94rem;
+      right: 11.69rem;
+    }
+  }
+
+  @media (min-width: 90rem) {
+    width: 69.375rem;
+    height: 37.5rem;
+
+    & .figures {
+      position: absolute;
+      top: -2.5rem;
+      right: 28.87rem;
+      width: 19.5rem;
+      height: 29.25rem;
+    }
+  }
+}
